@@ -10,6 +10,7 @@ ENV GIT_BRANCH ${GIT_BRANCH:-master}
 
 # Add image-common for Desktop support
 RUN apt-get -y update && \
+    apt -y install ffmpeg libavcodec-extra libavcodec-ffmpeg56
     apt-get -y install curl && \
     curl -H 'Cache-Control: no-cache' \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \

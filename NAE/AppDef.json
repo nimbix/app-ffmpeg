@@ -1,7 +1,7 @@
 {
   "name": "FFmpeg",
   "description": "FFmpeg on Ubuntu for Intel",
-  "author": "jhegge",
+  "author": "Nimbix, Inc.",
   "licensed": true,
   "classifications": [
     "Transcoding"
