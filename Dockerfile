@@ -17,6 +17,7 @@ RUN apt-get -y update && \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
 ADD NAE/help.html /etc/NAE/help.html
+ADD NAE/screenshot.png /etc/NAE/screenshot.png
 
 # AppDef validation
 ADD NAE/AppDef.json /etc/NAE/AppDef.json
