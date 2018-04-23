@@ -25,7 +25,7 @@
         "terminal": {
           "name": "Terminal",
           "description": "XFCE terminal",
-          "type": "STR",
+          "type": "CONST",
           "value": "xfce4-terminal",
           "positional": true,
           "required": true
@@ -41,7 +41,7 @@
         "winff": {
           "name": "winff",
           "description": "WinFF GUI",
-          "type": "STR",
+          "type": "CONST",
           "value": "winff",
           "positional": true,
           "required": true
