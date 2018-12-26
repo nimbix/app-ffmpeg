@@ -3,7 +3,7 @@ LABEL maintainer="Nimbix, Inc."
 
 # Update SERIAL_NUMBER to force rebuild of all layers (don't use cached layers)
 ARG SERIAL_NUMBER
-ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20181226.1005}
+ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20181226.1505}
 
 ARG GIT_BRANCH
 ENV GIT_BRANCH ${GIT_BRANCH:-master}
@@ -12,8 +12,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Add image-common for Desktop support, FFmpeg and codecs
 RUN apt-get -y update && \
-    apt-get -y install ffmpeg libavcodec-extra ubuntu-restricted-extras winff && \
-    apt-get -y install curl && \
+    apt-get -y install curl ffmpeg libavcodec-extra ubuntu-restricted-extras winff && \
     curl -H 'Cache-Control: no-cache' \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
