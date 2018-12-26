@@ -10,10 +10,7 @@
     "*"
   ],
   "vault-types": [
-    "FILE",
-    "BLOCK",
-    "BLOCK_ARRAY",
-    "OBJECT"
+    "FILE"
   ],
   "commands": {
     "GUI": {
