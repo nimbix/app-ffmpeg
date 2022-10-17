@@ -23,7 +23,7 @@
     },
     "WinFF": {
       "path": "/usr/bin/winff",
-      "interactive": true,
+      "desktop": true,
       "name": "GUI with WinFF",
       "description": "Launch a desktop session with FFmpeg installed and WinFF GUI",
       "parameters": {}
