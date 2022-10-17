@@ -3,6 +3,7 @@
   "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation. It is also highly portable: FFmpeg compiles, runs, and passes our testing infrastructure FATE across Linux, Mac OS X, Microsoft Windows, the BSDs, Solaris, etc. under a wide variety of build environments, machine architectures, and configurations.",
   "author": "ffmpeg.org",
   "licensed": true,
+  "appdefversion": 2,
   "classifications": [
     "Transcoding"
   ],
@@ -14,36 +15,18 @@
   ],
   "commands": {
     "GUI": {
-      "path": "/usr/local/bin/nimbix_desktop",
-      "interactive": true,
+      "path": "/usr/bin/xfce4-terminal",
+      "desktop": true,
       "name": "GUI",
       "description": "Launch a desktop session with FFmpeg installed and ready for interactive use",
-      "parameters": {
-        "terminal": {
-          "name": "Terminal",
-          "description": "XFCE terminal",
-          "type": "CONST",
-          "value": "xfce4-terminal",
-          "positional": true,
-          "required": true
-        }
-      }
+      "parameters": {}
     },
     "WinFF": {
-      "path": "/usr/local/bin/nimbix_desktop",
+      "path": "/usr/bin/winff",
       "interactive": true,
       "name": "GUI with WinFF",
       "description": "Launch a desktop session with FFmpeg installed and WinFF GUI",
-      "parameters": {
-        "winff": {
-          "name": "winff",
-          "description": "WinFF GUI",
-          "type": "CONST",
-          "value": "winff",
-          "positional": true,
-          "required": true
-        }
-      }
+      "parameters": {}
     }
   },
   "image": {
