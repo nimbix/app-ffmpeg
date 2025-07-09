@@ -4,7 +4,7 @@
   "author": "ffmpeg.org",
   "licensed": true,
   "classifications": [
-      "Unclassified Development"
+      "Unclassified/Development"
   ],
   "machines": [
     "*"
